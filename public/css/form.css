@@ -1,0 +1,37 @@
+.form {
+    margin: auto;
+    margin-top: 2.5em;
+    border: solid #00000038 1px;
+    border-radius: 10px;
+    width: 30%;
+}
+
+label {
+    font-size: 1.2em;
+    display:inline-block;
+    padding-right:7px;
+    width: 25%;
+    color: black;
+}
+#film_dateSortie{
+    display: inline-block;
+}
+.title-form > h3{
+    width: 30%;
+    margin: auto;
+    margin-top: 2.5em;
+    text-align:center ;
+}
+.input {
+    margin-bottom: 1.3em;
+}
+.main-form {
+    margin:2em 5em;
+    width: 100%;
+}
+
+.button-form {
+    display: inline-block;
+    margin: auto;
+
+}

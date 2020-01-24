@@ -1,0 +1,49 @@
+/*titre derniers film ajoutés*/
+#last-moovie-add {
+    text-align: center;
+}
+
+div > h3 {
+    margin-top: 2em;
+    font-size: 1.6em;
+    text-decoration: underline #8a8787;
+}
+
+/*Tous les titres */
+.title-moovie, div h3 {
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+.title-moovie {
+    font-size: 1.2em;
+    margin-bottom: 1.1em;
+}
+
+/*Conteneur principal de tout les films*/
+.main-moovie {
+    display: flex;
+    margin: 4em;
+}
+
+/*Conteneur enfant de film*/
+.content-moovie {
+    width: 30%;
+    border: darkgrey solid 1px;
+    background: linear-gradient(#d8d4d4, #9a9a9a);
+    margin-right: 4em;
+    padding: 1.2em;
+    border-radius: 5px;
+}
+
+.resume-moovie {
+    font-style: italic;
+}
+
+.resume-title, .perso {
+    font-weight: bold;
+}
+
+
+

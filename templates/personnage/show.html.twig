@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Personnage{% endblock %}
+
+{% block body %}
+    <div class="title-form">
+        <h3>Liste de personnage</h3>
+    </div>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Nom</th>
+                <td>{{ personnage.nom }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('personnage_edit', {'id': personnage.id}) }}">Modifier</a>
+
+    {{ include('personnage/_delete_form.html.twig') }}
+{% endblock %}

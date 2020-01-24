@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Modifier Personnage{% endblock %}
+
+{% block body %}
+    <h1>Modifier un Personnage</h1>
+
+    {{ include('personnage/_form.html.twig', {'button_label': 'Update'}) }}
+
+    {{ include('personnage/_delete_form.html.twig') }}
+{% endblock %}

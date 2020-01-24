@@ -1,0 +1,24 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <div id="last-moovie-add">
+        <h3> Derniers film ajoutés</h3>
+    </div>
+    <div class="main-moovie">
+        {% for item in listFilm %}
+            <div class="content-moovie">
+                <div class="title-moovie">
+                    <p>{{ item.titre }}</p>
+                </div>
+                <div class="resume-moovie">
+                    <p> <span class="resume-title">Résumé :</span>{{ item.resume }}</p>
+                </div>
+                        <p> <span class="perso">Personnages : </span>
+                            {% for personnages in item.personnages %}{{ personnages.nom }}
+                            {% endfor %}
+                        </p>
+            </div>
+        {% endfor %}
+    </div>
+
+{% endblock %}

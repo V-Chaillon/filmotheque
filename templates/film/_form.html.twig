@@ -1,0 +1,26 @@
+<div class="form">
+    <div class="main-form">
+        {{ form_start(form) }}
+        <div class="input">
+            {{ form_label(form.titre) }}
+            {{ form_widget(form.titre) }}
+        </div>
+        <div class="input">
+            {{ form_label(form.resume) }}
+            {{ form_widget(form.resume) }}
+        </div>
+        <div class="input">
+            {{ form_label(form.dateSortie) }}
+            {{ form_widget(form.dateSortie) }}
+        </div>
+        <div class="input">
+            {{ form_label(form.personnages) }}
+            {{ form_widget(form.personnages) }}
+        </div>
+        <div class="button-form">
+            <button class="btn">{{ button_label|default('Ajouter') }}</button>
+        </div>
+        {{ form_errors(form) }}
+        {{ form_end(form) }}
+    </div>
+</div>
